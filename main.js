@@ -27,14 +27,13 @@
   //  alert("votre pasge est trop petite");
 //}
 
-var nombre = prompt("entrez un nombre", 100);
-var resultat=1;
+//var nombre = prompt("entrez un nombre", 100);
+//var resultat=1;
 
-for (var i=1; i<=nombre; i++)
-{
-    
-    resultat= i*resultat;
-}
+//for (var i=1; i<=nombre; i++)
+//{
+  //  resultat= i*resultat;
+//}
 
-alert("resultat :" + resultat);
+//alert("resultat :" + resultat);
 
