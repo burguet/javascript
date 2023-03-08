@@ -37,3 +37,9 @@
 
 //alert("resultat :" + resultat);
 
+function ModifText()
+{
+  alert ("je vais changer la div");
+  var Madiv = document.getElementById("MaDiveNum1");
+  Madiv.innerHTML = "test";
+}
