@@ -40,6 +40,34 @@
 function ModifText()
 {
   alert ("je vais changer la div");
-  var Madiv = document.getElementById("MaDiveNum1");
-  Madiv.innerHTML = "hello";
+
+  var Madiv = document.getElementsByName("test");
+
+  Madiv.forEach(function(element) 
+  {
+    
+    element.innerHTML = "Hello";
+
+  });
+
+}
+
+
+function ModifText2() {
+  alert(" modifier la div !");
+  var Madiv = document.getElementsByTagName("div");
+
+  for (var i = 0; i < Madiv.length; i++) {
+    Madiv[i].innerHTML = "Hello2";
+  }
+}
+
+
+function ModifText3() {
+  alert("Je vais modifier la div !");
+  var Madiv = document.getElementsByClassName("test");
+  
+  for (var i = 0; i < Madiv.length; i++) {
+    Madiv[i].innerHTML = "Hello3";
+  }
 }
