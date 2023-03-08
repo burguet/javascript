@@ -46,7 +46,7 @@
 
     <h3 style="text-align: center;color:orange">Deuxième question</h3>
     <div class="divA">
-        <div id="Methode5" class="testclass">
+        <div id="Methode5" class="testclass1">
             
             Clique pour me faire disparaitre
         </div>
