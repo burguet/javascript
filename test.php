@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div id="MaDiveNum1">coucourtest</div>
+    <div id="MaDiveNum1">coucou</div>
 </body>
 <script src="main.js"></script>
 <script> ModifText(); </script>
