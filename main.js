@@ -72,66 +72,60 @@
  // }
 //}
 
-var Madivtest = document.getElementById("test");
+var MaDiv = document.getElementById("MaDiv1");
+MaDiv.addEventListener("click", cliquer);
 
-Madiv.addEventListener("click", changement);
-
-function changement(evenement)
+function cliquer(evenement)
 {
-  evenement.target.innerHTML ="on m'a cliqué dessus";
+  evenement.target.innerHTML = "on m'a cliqué dessus"
 }
 
-
-
-var compteur = 0;
+var competeur = 0;
 var compteur2 = 0;
 
-var MaDivtest2 = document.getElementById("Methode1");
-MaDiv2.addEventListener("click", clic);
+MaDiv = document.getElementById("Methode1");
+MaDiv.addEventListener("click", cliquer2);
 
-var MaDivtest2 = document.getElementById("Methode2");
-MaDiv2.addEventListener("mouseover", survole);
+MaDiv = document.getElementById("Methode2");
+MaDiv.addEventListener("mouseover", survole);
 
-var MaDivtest2 = document.getElementById("Methode3");
-MaDiv2.addEventListener("keydown", ecriture);
+MaDiv = document.getElementById("Methode3");
+MaDiv.addEventListener("keydown", clavier);
 
-
-
-function ecriture(evenement) {
-    evenement.target.innerHTML = "On a écrit : "+evenement.key+" fois !";
+function cliquer2(evenement)
+{
+  competeur++;
+  evenement.target.innerHTML = "on m'a cliqué dessus"+competeur+"fois";
 }
 
-function clic(evenement) {
-    compteur++;
-    evenement.target.innerHTML = "On m'a cliqué dessus "+compteur+" fois !";
+function survole(evenement)
+{
+  compteur2++;
+  evenement.target.innerHTML = "on m'a survoler"+compteur2+"fois";
 }
 
-function survole(evenement) {
-    compteur2++;
-    evenement.target.innerHTML = "On m'a survolé "+compteur2+" fois !";
+function clavier(evenement)
+{
+  evenement.target.innerHTML = "on a appuyer sur :"+evenement.key;
 }
 
 
+MaDiv = document.getElementById("Methode4");
+MaDiv.addEventListener("click", couleur);
 
-// Exercices
-
-
-var MaDiv4 = document.getElementById("Methode4");
-MaDiv4.addEventListener("click", changementDiv);
-
-var MaDiv5 = document.getElementById("Methode5");
-MaDiv5.addEventListener("mouseover", visibilite);
+MaDiv = document.getElementById("Methode5");
+MaDiv.addEventListener("mouseover", vue);
 
 
-function changementDiv(evenement) {
-    if (evenement.target.className === "testclass1") {
-        evenement.target.className = "testclass2";
+function couleur(evenement) {
+    if (evenement.target.className === "changementcouleur1") {
+        evenement.target.className = "changementcouleur2";
     } else {
-        evenement.target.className = "testclass1";
+        evenement.target.className = "changementcouleur1";
     }
 }
 
-function visibilite(evenement) {
-    MaDiv5.style.backgroundColor = 'rgba(255, 255, 255, .4)';
-    MaDiv5.innerHTML = '';
+function vue(evenement) {
+  evenement.target.className = "disparition";
+    MaDiv.innerHTML = '';
 }
