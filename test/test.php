@@ -19,38 +19,13 @@
     <div class="bouton" onclick="ModifText3();">GetElementByClassName</div>
 -->
 
-<h1 style="text-align: center;color:orange">Exercice 10 sur le JavaScript</h1>
-    <h3 style="text-align: center;color:orange">EventListener</h3>
-    <div class="divA">
-        <div id="test" class="testclass">
-            coucou
-        </div>
-        <div id="Methode1" class="testclass">
-            Clique moi dessus !
-        </div>
-        <div id="Methode2" class="testclass">
-            Survole moi !
-        </div>
-        <div id="Methode3" class="testclass" tabindex="0">
-            Appuie au clavier
-        </div>
-        </div>
+<div id="MaDiv1"> je suis la div 1</div>
+<div id="Methode1" class="divD">clic moi</div>
+<div id="Methode2" class="divD">survole moi</div>
+<div id="Methode3" class="divD" tabindex ="0">appui sur ton clavier</div>
+<div id="Methode4" class="changementcouleur1">Cette div changera de couleur si tu appuies dessus ! </div>
+<div id="Methode5" class="changementcouleur1"> survole pour me faire disparaitre</div>
     
-    <h3 style="text-align: center;color:orange">Première question</h3>
-
-    <div class="divA">
-        <div id="Methode4" class="testclass1">
-            Cette div changera de couleur si tu appuies dessus !
-        </div>
-    </div>
-
-    <h3 style="text-align: center;color:orange">Deuxième question</h3>
-    <div class="divA">
-        <div id="Methode5" class="testclass1">
-            
-            Clique pour me faire disparaitre
-        </div>
-     </div>
 </body>
 <script src="main.js"></script>
 
